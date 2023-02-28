@@ -9,8 +9,8 @@ soup= BeautifulSoup(respuesta.content, 'html.parser')
 list= soup.find_all("div", class_="product text-left")
 
 for f in list:
-    enlaces_nombres= f.find("div", class_="product--data--info").text
-    enlaces_precios= f.find("span", class_="woocommerce-Price-currencySymbol").text
+    enlaces_nombres= f.find("div", class_="AGREGAR VARIABLE DE LA CLASE").text
+    enlaces_precios= f.find("span", class_="AGREGAR VARIABLE DE LA CLASE").text
     with open("precios.txt", 'a') as file:
         file.write(enlaces_nombres)
         print("\n")
