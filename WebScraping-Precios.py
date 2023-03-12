@@ -6,7 +6,7 @@ print("\n\nBIENVENIDO A WebScraping-Precios\n")
 sitio= input("Ingrese un sitio web: ") #URL para extraer los datos
 respuesta= requests.get(sitio)#Enviar una solicitud al sitio
 soup= BeautifulSoup(respuesta.content, 'html.parser')
-list= soup.find_all("div", class_="product text-left")
+list= soup.find_all("AGREGAR VARIABLE DE LA CLASE", class_="AGREGAR VARIABLE DE LA CLASE")
 
 for f in list:
     enlaces_nombres= f.find("div", class_="AGREGAR VARIABLE DE LA CLASE").text
